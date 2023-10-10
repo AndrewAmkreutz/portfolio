@@ -1,9 +1,10 @@
-import resume from '../assets/pdf/resume.pdf'
+import resume from '../assets/pdf/Amkreutz_Andrew_Resume_09-07-23.pdf'
+import image from '../assets/profile_pic/DSC00351-Edit.png'
 
 export const headerData = {
-    name: 'Jane Doe',
-    title: "Web Developer",
-    desciption:"There wasn't a bird in the sky, but that was not what caught her attention. It was the clouds. The deep green that isn't the color of clouds, but came with these. She knew what was coming and she hoped she was prepared. ",
-    image: 'https://raw.githubusercontent.com/PhantomScript/asset-container/main/developer-portfolio/landingImg.png',
+    name: 'Andrew Amkreutz',
+    title: "Mechanical Engineer",
+    desciption:"\"Good is the enemy of great\" -James C. Collins ",
+    image: image,
     resumePdf: resume
 }

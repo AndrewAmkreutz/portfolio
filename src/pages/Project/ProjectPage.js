@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet'
 import { Grid } from '@material-ui/core'
 import { Link } from 'react-router-dom'
 import { makeStyles } from '@material-ui/core/styles';
-import { AiOutlineHome } from "react-icons/ai";
+import { IoHomeSharp } from "react-icons/io5";
 
 import './ProjectPage.css'
 import { SingleProject } from '../../components';
@@ -26,7 +26,7 @@ function ProjectPage() {
             color: theme.tertiary, 
             width: '40%',
             height: '2.75rem',
-            outline: 'none',
+            outline: '3px solid #00000050',
             border: 'none',
             borderRadius: '20px',
             padding: '0.95rem 1rem',
@@ -34,10 +34,6 @@ function ProjectPage() {
             fontWeight: 500,
             fontSize: '0.9rem',  
             backgroundColor: theme.secondary, 
-            boxShadow: theme.type === 'dark' ? 'inset 3px 3px 6px #ffffff10, inset -3px -3px 6px #00000060' : 'inset 3px 3px 6px #ffffffbd, inset -3px -3px 6px #00000030',
-            "&::placeholder": {
-                color: theme.tertiary80, 
-            },
             [t.breakpoints.down('sm')]: {
                 width:'350px',
             },
@@ -46,13 +42,13 @@ function ProjectPage() {
             color: theme.secondary,
             position: 'absolute',
             top: 25,
-            left: 25,
-            padding: '7px',
-            borderRadius: '50%',
+            right: 25,
+            padding: '8px',
+            borderRadius: '33%',
             boxSizing: 'content-box',
             fontSize: '2rem',
             cursor: 'pointer',
-            boxShadow: theme.type === 'dark' ? '3px 3px 6px #ffffff40, -3px -3px 6px #00000050' : '3px 3px 6px #ffffff40, -3px -3px 6px #00000050',
+            outline: '3px solid #00000050',
             transition: 'all 0.3s ease-in-out',
             "&:hover": 
             {
@@ -74,7 +70,7 @@ function ProjectPage() {
             </Helmet>
             <div className="projectPage-header" style={{backgroundColor:theme.primary}}>
                 <Link to="/">
-                        <AiOutlineHome className={classes.home}/>
+                        <IoHomeSharp className={classes.home}/>
                 </Link>
                 <h1 style={{color: theme.secondary}}>Projects</h1>
             </div>

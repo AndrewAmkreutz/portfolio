@@ -1,5 +1,5 @@
 .achievement {
-    min-height: 100vh;
+    min-height: 60vh;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -24,8 +24,9 @@
 
 .achievement-body h4 {
     font-size: 1.75rem;
-    font-family: 'Caveat', cursive;
-    font-weight: 400;
+    font-family: var(--primaryFont);
+    color: #e0d9d9;
+    font-weight: 200;
 }
 
 .achievement-cards {
